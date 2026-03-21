@@ -18,24 +18,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Law for Beginners | Your Simple Legal Guide",
+    default: "Law for Beginners | Aqsa Zam Zam Mirza Johar Baig",
     template: "%s | Law for Beginners"
   },
-  description: "Learn legal concepts without the jargon. A structured, beginner-friendly platform for understanding your rights, criminal law, and fundamental rights.",
-  keywords: ["law for beginners", "legal education", "fundamental rights", "criminal law basics", "learn law simple"],
-  authors: [{ name: "Aqsa Mirza" }],
-  creator: "Aqsa Mirza",
+  description: "Learn legal concepts without the jargon. A structured, beginner-friendly platform by Aqsa Zam Zam Mirza Johar Baig (BA LLB, Legal Researcher) for understanding fundamental rights and criminal law.",
+  keywords: ["Aqsa Zam Zam Mirza Johar Baig", "Aqsa Mirza", "law for beginners", "legal education", "fundamental rights", "criminal law basics", "learn law simple"],
+  authors: [{ name: "Aqsa Zam Zam Mirza Johar Baig", url: "https://aqsa-zam-zam-mirza-johar-baig-portf.vercel.app/" }],
+  creator: "Aqsa Zam Zam Mirza Johar Baig",
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://law-for-beginners.vercel.app",
-    title: "Law for Beginners | Learn Legal Basics Simply",
-    description: "The easiest way to learn law and understand your rights through storytelling and real-life examples.",
+    title: "Law for Beginners | Aqsa Zam Zam Mirza Johar Baig",
+    description: "The easiest way to learn law and understand your rights through storytelling and real-life examples, crafted by Legal Researcher Aqsa Zam Zam Mirza Johar Baig.",
     siteName: "Law for Beginners",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Law for Beginners | Learn Legal Basics Simply",
+    title: "Law for Beginners | by Aqsa Zam Zam Mirza Johar Baig",
     description: "The easiest way to learn law and understand your rights through storytelling and real-life examples.",
     creator: "@aqsamirza",
   },

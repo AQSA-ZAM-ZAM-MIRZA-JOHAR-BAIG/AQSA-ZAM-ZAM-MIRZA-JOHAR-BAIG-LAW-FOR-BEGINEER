@@ -28,10 +28,16 @@ const components: Components = {
     <li className={cn("mt-2", className)} {...props} />
   ),
   blockquote: ({ className, ...props }) => (
-    <blockquote className={cn("mt-6 border-l-4 border-primary pl-6 italic text-muted-foreground bg-primary/5 py-2 pr-4 rounded-r-lg", className)} {...props} />
+    <blockquote className={cn("mt-6 border-l-[6px] border-primary pl-6 italic text-foreground bg-primary/5 py-3 pr-4 shadow-sm rounded-r-xl relative overflow-hidden", className)} {...props}>
+      <div className="absolute left-0 top-0 bottom-0 bg-primary/10 w-full pointer-events-none" />
+      <span className="relative z-10">{props.children}</span>
+    </blockquote>
   ),
   strong: ({ className, ...props }) => (
-    <strong className={cn("font-semibold text-foreground", className)} {...props} />
+    <strong className={cn("font-bold text-foreground bg-primary/5 px-1 py-0.5 rounded-sm", className)} {...props} />
+  ),
+  hr: ({ className, ...props }) => (
+    <hr className={cn("my-10 border-muted-foreground/20", className)} {...props} />
   ),
   em: ({ className, ...props }) => (
     <em className={cn("italic", className)} {...props} />

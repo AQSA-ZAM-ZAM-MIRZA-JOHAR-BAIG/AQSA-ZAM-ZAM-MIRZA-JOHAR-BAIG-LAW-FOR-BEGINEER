@@ -14,6 +14,16 @@ const mainNavItems = [
     items: [
       { title: "What is Law?", href: "/learn/introduction/what-is-law", slug: "what-is-law" },
       { title: "Types of Law", href: "/learn/introduction/types-of-law", slug: "types-of-law" },
+      { title: "How Laws are Made", href: "/learn/introduction/how-laws-are-made", slug: "how-laws-are-made" },
+    ],
+  },
+  {
+    title: "Civil Law Basics",
+    href: "/learn/civil",
+    icon: Scale,
+    items: [
+      { title: "Basics of Contracts", href: "/learn/civil/contracts", slug: "contracts" },
+      { title: "What is a Tort?", href: "/learn/civil/torts", slug: "torts" },
     ],
   },
   {
