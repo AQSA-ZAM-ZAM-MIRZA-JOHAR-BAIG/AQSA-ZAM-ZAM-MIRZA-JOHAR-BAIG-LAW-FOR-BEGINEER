@@ -15,6 +15,7 @@ const mainNavItems = [
       { title: "What is Law?", href: "/learn/introduction/what-is-law", slug: "what-is-law" },
       { title: "Types of Law", href: "/learn/introduction/types-of-law", slug: "types-of-law" },
       { title: "How Laws are Made", href: "/learn/introduction/how-laws-are-made", slug: "how-laws-are-made" },
+      { title: "The Justice System", href: "/learn/introduction/justice-system", slug: "justice-system" },
     ],
   },
   {
@@ -24,6 +25,8 @@ const mainNavItems = [
     items: [
       { title: "Basics of Contracts", href: "/learn/civil/contracts", slug: "contracts" },
       { title: "What is a Tort?", href: "/learn/civil/torts", slug: "torts" },
+      { title: "Property Law", href: "/learn/civil/property-law", slug: "property-law" },
+      { title: "Family Law", href: "/learn/civil/family-law", slug: "family-law" },
     ],
   },
   {
@@ -33,6 +36,7 @@ const mainNavItems = [
     items: [
       { title: "Right to Equality", href: "/learn/rights/equality", slug: "equality" },
       { title: "Right to Freedom", href: "/learn/rights/freedom", slug: "freedom" },
+      { title: "Article 32", href: "/learn/rights/article-32", slug: "article-32" },
     ],
   },
   {
@@ -42,6 +46,8 @@ const mainNavItems = [
     items: [
       { title: "What is an FIR?", href: "/learn/criminal/what-is-fir", slug: "what-is-fir" },
       { title: "Bail Basics", href: "/learn/criminal/bail", slug: "bail" },
+      { title: "Arrest Rights", href: "/learn/criminal/arrest-rights", slug: "arrest-rights" },
+      { title: "The Charge Sheet", href: "/learn/criminal/charge-sheet", slug: "charge-sheet" },
     ],
   },
 ];
