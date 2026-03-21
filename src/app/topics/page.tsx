@@ -46,7 +46,7 @@ export default function TopicsPage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {categoryLessons.map((lesson, idx) => (
+              {categoryLessons.map((lesson) => (
                 <Link 
                   key={lesson.slug} 
                   href={`/learn/${lesson.category}/${lesson.slug}`}

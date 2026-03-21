@@ -6,6 +6,12 @@ interface MarkdownRendererProps {
 }
 
 const components: Components = {
+  th: ({ className, ...props }: React.ThHTMLAttributes<HTMLTableCellElement>) => (
+    <th className={cn("border border-muted-foreground/20 px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right", className)} {...props} />
+  ),
+  td: ({ className, ...props }: React.TdHTMLAttributes<HTMLTableCellElement>) => (
+    <td className={cn("border border-muted-foreground/20 px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right", className)} {...props} />
+  ),
   h1: ({ className, ...props }) => (
     <h1 className={cn("mt-2 scroll-m-20 text-4xl font-bold tracking-tight", className)} {...props} />
   ),
@@ -36,6 +42,11 @@ const components: Components = {
   strong: ({ className, ...props }) => (
     <strong className={cn("font-bold text-foreground bg-primary/5 px-1 py-0.5 rounded-sm", className)} {...props} />
   ),
+  table: ({ className, ...props }: { className?: string, children?: React.ReactNode }) => (
+    <div className="my-6 w-full overflow-y-auto rounded-lg border border-muted-foreground/20">
+      <table className={cn("w-full text-sm", className)} {...props} />
+    </div>
+  ),
   hr: ({ className, ...props }) => (
     <hr className={cn("my-10 border-muted-foreground/20", className)} {...props} />
   ),
@@ -46,6 +57,7 @@ const components: Components = {
     <a className={cn("font-medium text-primary underline underline-offset-4 hover:text-primary/80", className)} {...props} />
   ),
   code: ({ className, children, ...props }) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const isInline = !((props as any).node?.position?.start?.line !== (props as any).node?.position?.end?.line);
     return isInline ? (
       <code className={cn("relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold", className)} {...props}>

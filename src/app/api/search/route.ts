@@ -6,6 +6,11 @@ import { getAllLessons } from "@/lib/markdown";
 export async function GET() {
   const lessons = getAllLessons();
   // Strip out full content to keep the payload small
-  const strippedLessons = lessons.map(({ content, ...rest }) => rest);
-  return NextResponse.json(strippedLessons);
+  const searchIndex = lessons.map(({ title, description, category, slug }) => ({
+    title,
+    description,
+    category,
+    slug,
+  }));
+  return NextResponse.json(searchIndex);
 }

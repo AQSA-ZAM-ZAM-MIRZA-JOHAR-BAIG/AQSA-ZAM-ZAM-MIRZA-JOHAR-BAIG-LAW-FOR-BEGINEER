@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { BookOpen, Menu } from "lucide-react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 import { SearchDialog } from "@/components/SearchDialog";
 
 export function Header() {

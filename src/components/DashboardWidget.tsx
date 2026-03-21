@@ -2,7 +2,7 @@
 
 import { useProgress } from "@/hooks/useProgress";
 import Link from "next/link";
-import { ArrowRight, Bookmark, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Bookmark, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { LessonMetadata } from "@/lib/markdown";
 
@@ -45,8 +45,8 @@ export function DashboardWidget() {
                 <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">
                   {nextUp.title}
                 </h4>
-                <div className="text-sm text-muted-foreground mt-1 capitalize">
-                  {nextUp.category} path
+                <div className="flex items-center text-sm font-medium text-primary mt-1">
+                  Let&apos;s start <ChevronRight className="w-4 h-4 ml-1" />
                 </div>
               </div>
               <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
@@ -54,7 +54,7 @@ export function DashboardWidget() {
           ) : (
             <div className="p-4 border rounded-lg bg-green-50/50 dark:bg-green-900/10 border-green-200 dark:border-green-900">
               <p className="text-green-700 dark:text-green-500 font-medium">
-                🎉 You've completed all available lessons!
+                🎉 You&apos;ve completed all available lessons!
               </p>
             </div>
           )}

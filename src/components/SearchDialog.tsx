@@ -1,12 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Fuse from "fuse.js";
 import { Search } from "lucide-react";
 import Link from "next/link";
-import { LessonMetadata } from "@/lib/markdown"; // Need to pass lessons as prop or fetch via API route
-
-// We will fetch search index via a client-side API route or embed it
+import { LessonMetadata } from "@/lib/markdown";
 
 export function SearchDialog() {
   const [query, setQuery] = useState("");
@@ -15,27 +13,25 @@ export function SearchDialog() {
   const [searchIndex, setSearchIndex] = useState<LessonMetadata[]>([]);
 
   useEffect(() => {
-    // Fetch search index only when dialog is opened or lazily
     fetch("/api/search")
       .then((res) => res.json())
       .then((data) => setSearchIndex(data));
   }, []);
 
-  const fuse = new Fuse(searchIndex, {
+  const fuse = useMemo(() => new Fuse(searchIndex, {
     keys: ["title", "description", "category"],
     threshold: 0.3,
-  });
+  }), [searchIndex]);
 
   useEffect(() => {
     if (query.trim() === "") {
       setResults([]);
     } else {
-      const searchResults = fuse.search(query);
-      setResults(searchResults.map((result) => result.item));
+      const searchResults = fuse.search(query).map((result) => result.item);
+      setResults(searchResults);
     }
-  }, [query]);
+  }, [query, fuse]);
 
-  // Command K shortcut
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
@@ -51,7 +47,7 @@ export function SearchDialog() {
     <>
       <button 
         onClick={() => setIsOpen(true)}
-        className="relative w-full max-w-sm hidden sm:flex items-center w-80 rounded-full border bg-muted/50 pl-3 pr-4 py-2 text-sm text-muted-foreground hover:bg-muted/80 transition-all font-medium text-left"
+        className="relative max-w-sm hidden sm:flex items-center w-80 rounded-full border bg-muted/50 pl-3 pr-4 py-2 text-sm text-muted-foreground hover:bg-muted/80 transition-all font-medium text-left"
       >
         <Search className="h-4 w-4 mr-2" />
         Search topics...
@@ -63,12 +59,12 @@ export function SearchDialog() {
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 bg-background/80 backdrop-blur-sm">
           <div className="fixed inset-0" onClick={() => setIsOpen(false)} />
-          <div className="relative w-full max-w-2xl bg-card border rounded-xl shadow-lg ring-1 ring-black/5 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+          <div className="relative w-full max-w-2xl bg-card border rounded-xl shadow-lg ring-1 ring-black/5 overflow-hidden animate-in fade-in zoom-in-95 duration-200 mx-4">
             <div className="flex items-center px-4 border-b">
               <Search className="h-5 w-5 text-muted-foreground mr-2" />
               <input
                 autoFocus
-                className="w-full bg-transparent px-2 py-4 focus:outline-none text-base"
+                className="w-full bg-transparent px-2 py-4 focus:outline-none text-base border-none outline-none"
                 placeholder="Search for legal topics, phrases..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
@@ -83,7 +79,7 @@ export function SearchDialog() {
             <div className="max-h-[60vh] overflow-y-auto p-2">
               {results.length === 0 && query !== "" && (
                 <p className="p-4 text-center text-sm text-muted-foreground">
-                  No results found for "{query}".
+                  No results found for &quot;{query}&quot;.
                 </p>
               )}
               {query === "" && (

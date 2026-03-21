@@ -21,7 +21,7 @@ export function Comments() {
         
         <div className="p-4 bg-muted/50 rounded-lg border text-sm max-w-md w-full">
           <p className="font-medium text-foreground mb-1 italic">
-            "Wait, so an FIR can only be filed for serious crimes?"
+            &quot;Wait, so an FIR can only be filed for serious crimes?&quot;
           </p>
           <p className="text-xs text-muted-foreground">— Sample Question</p>
         </div>
