@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: 'https://aqsazammam.com',
     title: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | CS Portfolio & Shayari',
     description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, Urdu shayari, and blogs.",
-    images: [{ url: '/images/aqsa-hero.webp', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG portrait' }],
+    images: [{ url: '/profile.jpeg', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG portrait' }],
   },
   keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Zam Zam Mirza Johar Baig', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'AqsA Mirza Urdu shayari', 'AqsA Baig blogs coding', 'AqsA Zam Zam developer Nagpur'],
 };

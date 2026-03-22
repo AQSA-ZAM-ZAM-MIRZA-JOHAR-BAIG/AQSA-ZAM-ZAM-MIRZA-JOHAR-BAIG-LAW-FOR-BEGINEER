@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { BookOpen, Code, Terminal, Edit3 } from 'lucide-react';
 
@@ -14,10 +15,15 @@ export default function HomePage() {
           Computer Science Student at VIIT Pune. Backend & Full-Stack Developer. Urdu Poet.
         </h2>
         
-        {/* Decorative element for hero without relying on a real image placeholder immediately avoiding broken links */}
-        <div className="relative w-40 h-40 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-             <Code className="w-16 h-16 text-blue-500 opacity-50 absolute" />
-             <div className="z-10 text-4xl font-black text-gray-500 whitespace-nowrap">AZ</div>
+        <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50">
+          <Image 
+            src="/profile.jpeg" 
+            alt="AQSA ZAM ZAM MIRZA JOHAR BAIG" 
+            fill 
+            sizes="(max-width: 768px) 192px, 224px"
+            priority
+            className="object-cover"
+          />
         </div>
 
         <p className="text-lg leading-relaxed text-left mb-8 max-w-3xl mx-auto bg-blue-50/50 dark:bg-blue-900/10 p-6 sm:p-8 rounded-2xl border border-blue-100 dark:border-blue-900/50">
