@@ -1,277 +1,73 @@
-import Link from "next/link";
-import { ArrowRight, BookOpen, GraduationCap, Scale, ChevronRight, Github, Linkedin, Youtube, ExternalLink, User, Feather, FileText, Database, PenTool } from "lucide-react";
-import { DashboardWidget } from "@/components/DashboardWidget";
+import Link from 'next/link';
+import { BookOpen, Code, Terminal, Edit3 } from 'lucide-react';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center pt-8 pb-20 w-full px-4 sm:px-0">
+    <article className="flex w-full flex-col items-center justify-center space-y-16 py-8 md:py-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
+      
       {/* Hero Section */}
-      <section className="w-full max-w-5xl rounded-3xl bg-gradient-to-b from-primary/5 via-primary/[0.02] to-transparent pt-16 pb-12 sm:pt-24 sm:pb-20 px-6 sm:px-12 border border-primary/10 shadow-sm relative overflow-hidden">
-        {/* Abstract decorative elements */}
-        <div className="absolute top-0 right-0 -m-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 -m-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
-
-        <div className="relative z-10 flex flex-col justify-center items-center text-center space-y-8 max-w-3xl mx-auto">
-          <div className="inline-flex animate-in fade-in slide-in-from-bottom-4 duration-500 items-center rounded-full border px-4 py-1.5 text-sm font-semibold bg-white dark:bg-black text-primary border-primary/20 tracking-tight shadow-sm cursor-default">
-            <GraduationCap className="w-4 h-4 mr-2" />
-            Law made simple for everyone
-          </div>
-          <h1 className="animate-in fade-in slide-in-from-bottom-6 duration-700 text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-foreground text-balance leading-tight sm:leading-tight">
-            Understand Your Rights <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">
-              Without the Jargon
-            </span>
-          </h1>
-          <p className="animate-in fade-in slide-in-from-bottom-8 duration-1000 text-xl text-muted-foreground font-medium md:leading-relaxed text-balance max-w-2xl">
-            A premium, beginner-friendly legal education platform designed to explain complex legal concepts using simple language and real-world scenarios.
-          </p>
-          <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000 flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 w-full sm:w-auto">
-            <Link
-              href="/learn/introduction"
-              className="w-full sm:w-auto inline-flex h-14 items-center justify-center rounded-xl bg-primary px-8 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Start Learning Path
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
-              href="/topics"
-              className="w-full sm:w-auto inline-flex h-14 items-center justify-center rounded-xl border-2 border-input bg-background/50 backdrop-blur-sm px-8 text-base font-semibold shadow-sm transition-all hover:bg-accent hover:text-accent-foreground hover:border-accent-foreground/20 hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Browse Library
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <DashboardWidget />
-
-      {/* Feature Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 w-full max-w-5xl">
-        <div className="group rounded-2xl border bg-card text-card-foreground shadow-[0_2px_10px_-3px_rgba(6,81,237,0.1)] p-8 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
-          <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-            <BookOpen className="h-7 w-7 text-primary group-hover:text-current" />
-          </div>
-          <h3 className="text-2xl font-bold mb-3 tracking-tight">Crystal Clear</h3>
-          <p className="text-muted-foreground leading-relaxed">
-            We break down the complexities of law into bite-sized, easy-to-understand explanations with relatable real-world analogies.
-          </p>
-        </div>
+      <header className="text-center max-w-4xl px-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
+          AQSA ZAM ZAM MIRZA JOHAR BAIG <br className="hidden md:block"/> <span className="text-2xl md:text-4xl text-gray-800 dark:text-gray-200">| Portfolio & Shayari</span>
+        </h1>
+        <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium mb-10 leading-relaxed">
+          Computer Science Student at VIIT Pune. Backend & Full-Stack Developer. Urdu Poet.
+        </h2>
         
-        <div className="group rounded-2xl border bg-card text-card-foreground shadow-[0_2px_10px_-3px_rgba(6,81,237,0.1)] p-8 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
-          <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-            <Scale className="h-7 w-7 text-primary group-hover:text-current" />
-          </div>
-          <h3 className="text-2xl font-bold mb-3 tracking-tight">Structured Paths</h3>
-          <p className="text-muted-foreground leading-relaxed">
-            Follow our guided curriculum logically, from Introduction to Law, to Civil Law, Fundamental Rights, and Criminal Law basics.
-          </p>
+        {/* Decorative element for hero without relying on a real image placeholder immediately avoiding broken links */}
+        <div className="relative w-40 h-40 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+             <Code className="w-16 h-16 text-blue-500 opacity-50 absolute" />
+             <div className="z-10 text-4xl font-black text-gray-500 whitespace-nowrap">AZ</div>
         </div>
-        
-        <div className="group rounded-2xl border bg-card text-card-foreground shadow-[0_2px_10px_-3px_rgba(6,81,237,0.1)] p-8 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
-          <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-            <ArrowRight className="h-7 w-7 text-primary group-hover:text-current" />
-          </div>
-          <h3 className="text-2xl font-bold mb-3 tracking-tight">Actionable Tips</h3>
-          <p className="text-muted-foreground leading-relaxed">
-            Learn exactly what to do in practical scenarios, like knowing how to file an FIR or understanding your rights in an arrest.
+
+        <p className="text-lg leading-relaxed text-left mb-8 max-w-3xl mx-auto bg-blue-50/50 dark:bg-blue-900/10 p-6 sm:p-8 rounded-2xl border border-blue-100 dark:border-blue-900/50">
+          Welcome to the digital home of <strong>AqsA Zam Zam Mirza Johar Baig</strong>. Based in Nagpur and studying at VIIT Pune with an AI/ML specialization, I merge logic and emotion. Here you will find my profound <Link href="/urdu-shayari" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">AqsA Mirza Urdu shayari</Link> alongside robust system architectures and <Link href="/portfolio" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">AqsA Zam Zam Mirza projects</Link> built on AWS, Next.js, and Python.
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/portfolio" className="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all flex items-center justify-center gap-2">
+               View Projects <Terminal className="w-4 h-4" />
+            </Link>
+            <Link href="/urdu-shayari" className="w-full sm:w-auto px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg font-medium transition-all flex items-center justify-center gap-2">
+               Read Shayari <Edit3 className="w-4 h-4" />
+            </Link>
+        </div>
+      </header>
+
+      {/* Featured Sections Grid */}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl px-4 mt-8">
+          <Link href="/about" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all">
+             <div className="bg-blue-100 dark:bg-blue-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6" /></div>
+             <h3 className="text-xl font-bold mb-2">CS Student & E-E-A-T</h3>
+             <p className="text-sm text-gray-600 dark:text-gray-400">Discover my background, education at VIIT Pune, and how I&apos;m training to be AqsA Zam Zam developer Nagpur.</p>
+          </Link>
+          <Link href="/blogs" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all md:col-span-1 lg:col-span-1">
+             <div className="bg-purple-100 dark:bg-purple-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6" /></div>
+             <h3 className="text-xl font-bold mb-2">AqsA Baig blogs coding</h3>
+             <p className="text-sm text-gray-600 dark:text-gray-400">Read my technical insights on Data Structures, Machine Learning deployments, and interview prep.</p>
+          </Link>
+          <Link href="/portfolio" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all md:col-span-2 lg:col-span-1">
+             <div className="bg-green-100 dark:bg-green-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform"><Terminal className="w-6 h-6" /></div>
+             <h3 className="text-xl font-bold mb-2">AqsA Johar Baig portfolio</h3>
+             <p className="text-sm text-gray-600 dark:text-gray-400">Explore my AI/ML apps, E-commerce backends, and DevOps workflows.</p>
+          </Link>
+      </section>
+
+      {/* LLM / Answer Engine Optimization (FAQ Schema Equivalent in content) */}
+      <section className="w-full max-w-4xl bg-gray-50 dark:bg-gray-800/80 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700/50 mt-16 px-6">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">Who is AQSA ZAM ZAM MIRZA JOHAR BAIG?</h2>
+        <div className="space-y-4 text-gray-700 dark:text-gray-300">
+          <p className="leading-relaxed">
+            AqsA Johar Baig is an ambitious software developer and researcher focusing on Full-Stack applications, Machine Learning, and Cloud infrastructure. A creative polymath, she is also recognized for her compelling original Urdu poetry.
           </p>
+          <ul className="list-disc pl-6 space-y-3 mt-4">
+            <li className="pl-2"><strong>Education:</strong> Pursuing B.Tech Computer Science with AI/ML Specialization at VIIT Pune.</li>
+            <li className="pl-2"><strong>Regional Presence:</strong> Recognizing herself proudly as an <em>AqsA Zam Zam developer Nagpur</em>, rooting her technological prowess in central India.</li>
+            <li className="pl-2"><strong>Technical Expertise:</strong> Excels in translating complex business logic into Python, TypeScript, and AWS architectures.</li>
+          </ul>
         </div>
       </section>
 
-      {/* Quick Links Section */}
-      <section className="w-full max-w-5xl mt-24 mb-12">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold tracking-tight">Popular Starting Points</h2>
-          <Link href="/topics" className="text-primary font-medium hover:underline flex items-center mt-2 sm:mt-0">
-            View all topics <ChevronRight className="w-4 h-4 ml-1" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/learn/introduction/types-of-law" className="p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors flex items-center justify-between group">
-            <div className="flex items-center gap-4">
-              <div className="bg-muted p-3 rounded-lg group-hover:bg-background">
-                <BookOpen className="w-6 h-6 text-foreground" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg text-foreground">Civil vs Criminal Law</h4>
-                <p className="text-sm text-muted-foreground">Understand the two main branches</p>
-              </div>
-            </div>
-            <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
-          </Link>
-
-          <Link href="/learn/criminal/what-is-fir" className="p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors flex items-center justify-between group">
-            <div className="flex items-center gap-4">
-              <div className="bg-muted p-3 rounded-lg group-hover:bg-background">
-                <Scale className="w-6 h-6 text-foreground" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg text-foreground">What is an FIR?</h4>
-                <p className="text-sm text-muted-foreground">The first step in a criminal investigation</p>
-              </div>
-            </div>
-            <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
-          </Link>
-          
-          <Link href="/learn/rights/freedom" className="p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors flex items-center justify-between group">
-            <div className="flex items-center gap-4">
-              <div className="bg-muted p-3 rounded-lg group-hover:bg-background">
-                <Scale className="w-6 h-6 text-foreground" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg text-foreground">Right to Freedom</h4>
-                <p className="text-sm text-muted-foreground">Your 6 key constitutional freedoms</p>
-              </div>
-            </div>
-            <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
-          </Link>
-
-          <Link href="/learn/civil/contracts" className="p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors flex items-center justify-between group">
-            <div className="flex items-center gap-4">
-              <div className="bg-muted p-3 rounded-lg group-hover:bg-background">
-                <BookOpen className="w-6 h-6 text-foreground" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg text-foreground">Basics of Contracts</h4>
-                <p className="text-sm text-muted-foreground">What makes a promise binding?</p>
-              </div>
-            </div>
-            <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
-          </Link>
-        </div>
-      </section>
-
-      {/* SEO Optimized Section: Online Profiles & Projects */}
-      <section className="w-full max-w-5xl mt-12 mb-20">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-primary tracking-wide uppercase">Creator & Developer</p>
-          <h2 className="text-3xl font-extrabold tracking-tight mt-2 pb-2">Aqsa Zam Zam Mirza Johar Baig</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-            BA LLB Student at Dr. Panjabrao Deshmukh College of Law, Amravati | CLAT 2022 AIR 42 | Legal Researcher & Web Developer
-          </p>
-        </div>
-
-        <div className="space-y-16">
-          {/* Profiles */}
-          <div>
-            <div className="flex items-center gap-2 mb-6 border-b pb-2">
-              <User className="w-5 h-5 text-primary" />
-              <h3 className="text-2xl font-bold">Online Profiles</h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <a href="https://www.linkedin.com/in/aqsa-zam-zam-mirza-johar-baig-28501b3b6/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl border bg-card hover:border-primary hover:shadow-md transition-all group">
-                <div className="bg-[#0A66C2]/10 p-3 rounded-lg text-[#0A66C2]"><Linkedin className="w-5 h-5" /></div>
-                <div className="flex-1 overflow-hidden">
-                  <div className="font-semibold text-sm truncate">LinkedIn</div>
-                  <div className="text-xs text-muted-foreground truncate">Aqsa Zam Zam Mirza Johar Baig</div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl border bg-card hover:border-primary hover:shadow-md transition-all group">
-                <div className="bg-foreground/10 p-3 rounded-lg text-foreground"><Github className="w-5 h-5" /></div>
-                <div className="flex-1 overflow-hidden">
-                  <div className="font-semibold text-sm truncate">GitHub</div>
-                  <div className="text-xs text-muted-foreground truncate">@AQSA-ZAM-ZAM-MIRZA...</div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.youtube.com/@aqsamirza08" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl border bg-card hover:border-primary hover:shadow-md transition-all group">
-                <div className="bg-[#FF0000]/10 p-3 rounded-lg text-[#FF0000]"><Youtube className="w-5 h-5" /></div>
-                <div className="flex-1 overflow-hidden">
-                  <div className="font-semibold text-sm truncate">YouTube</div>
-                  <div className="text-xs text-muted-foreground truncate">@aqsamirza08</div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://aqsamirza08.medium.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl border bg-card hover:border-primary hover:shadow-md transition-all group">
-                <div className="bg-foreground/10 p-3 rounded-lg text-foreground"><PenTool className="w-5 h-5" /></div>
-                <div className="flex-1 overflow-hidden">
-                  <div className="font-semibold text-sm truncate">Medium Blog</div>
-                  <div className="text-xs text-muted-foreground truncate">@aqsamirza08</div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.kaggle.com/aqsamirza08" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl border bg-card hover:border-primary hover:shadow-md transition-all group">
-                <div className="bg-[#20BEFF]/10 p-3 rounded-lg text-[#20BEFF]"><Database className="w-5 h-5" /></div>
-                <div className="flex-1 overflow-hidden">
-                  <div className="font-semibold text-sm truncate">Kaggle</div>
-                  <div className="text-xs text-muted-foreground truncate">@aqsamirza08</div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://stackoverflow.com/users/32468898/aqsa-zam-zam-mirza-johar-baig" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl border bg-card hover:border-primary hover:shadow-md transition-all group">
-                <div className="bg-[#F58025]/10 p-3 rounded-lg text-[#F58025]"><Database className="w-5 h-5" /></div>
-                <div className="flex-1 overflow-hidden">
-                  <div className="font-semibold text-sm truncate">Stack Overflow</div>
-                  <div className="text-xs text-muted-foreground truncate">Aqsa Zam Zam Mirza...</div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-            </div>
-          </div>
-
-          {/* Projects */}
-          <div>
-            <div className="flex items-center gap-2 mb-6 border-b pb-2">
-              <BookOpen className="w-5 h-5 text-primary" />
-              <h3 className="text-2xl font-bold">Other Projects</h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="https://aqsa-zam-zam-mirza-johar-baig-portf.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-muted p-3 rounded-lg group-hover:bg-background text-primary"><User className="w-5 h-5" /></div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-foreground">Personal Portfolio</h4>
-                    <p className="text-xs text-muted-foreground">aqsa-zam-zam-mirza-johar-baig-portf</p>
-                  </div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
-              </a>
-              <a href="https://aqsa-zam-zam-mirza-johar-baig-const.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-muted p-3 rounded-lg group-hover:bg-background text-primary"><Scale className="w-5 h-5" /></div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-foreground">Constitutional Law Blog</h4>
-                    <p className="text-xs text-muted-foreground">aqsa-zam-zam-mirza-johar-baig-const</p>
-                  </div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
-              </a>
-              <a href="https://aqsa-zam-zam-mirza-johar-baig-law-d.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-muted p-3 rounded-lg group-hover:bg-background text-primary"><BookOpen className="w-5 h-5" /></div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-foreground">Law Dictionary</h4>
-                    <p className="text-xs text-muted-foreground">aqsa-zam-zam-mirza-johar-baig-law-d</p>
-                  </div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
-              </a>
-              <a href="https://aqsa-zam-zam-mirza-johar-baig-blogs.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-muted p-3 rounded-lg group-hover:bg-background text-primary"><FileText className="w-5 h-5" /></div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-foreground">Personal Blogs</h4>
-                    <p className="text-xs text-muted-foreground">aqsa-zam-zam-mirza-johar-baig-blogs</p>
-                  </div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
-              </a>
-              <a href="https://aqsa-zam-zam-mirza-johar-baig-urdu.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-5 border rounded-xl hover:border-primary hover:bg-primary/5 transition-colors group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-muted p-3 rounded-lg group-hover:bg-background text-primary"><Feather className="w-5 h-5" /></div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-foreground">Urdu Shayari</h4>
-                    <p className="text-xs text-muted-foreground">aqsa-zam-zam-mirza-johar-baig-urdu</p>
-                  </div>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
+    </article>
   );
 }

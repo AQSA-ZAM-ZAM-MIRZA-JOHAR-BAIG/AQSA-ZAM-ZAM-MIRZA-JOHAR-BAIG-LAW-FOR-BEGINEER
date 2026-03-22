@@ -1,12 +1,12 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/api/',
+      disallow: ['/private/'],
     },
-    sitemap: 'https://law-for-beginners.vercel.app/sitemap.xml',
-  }
+    sitemap: 'https://aqsazammam.com/sitemap.xml',
+  };
 }

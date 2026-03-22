@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://law-for-beginners.vercel.app
+
+# Sitemaps
+Sitemap: https://law-for-beginners.vercel.app/sitemap.xml

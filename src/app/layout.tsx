@@ -1,70 +1,83 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
-import "./globals.css";
-import { Header } from "@/components/layout/Header";
-import { Sidebar } from "@/components/layout/Sidebar";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Script from 'next/script';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Law for Beginners | Aqsa Zam Zam Mirza Johar Baig",
-    template: "%s | Law for Beginners"
+    template: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | %s Portfolio',
+    default: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Portfolio & Shayari',
   },
-  description: "Learn legal concepts without the jargon. A structured, beginner-friendly platform by Aqsa Zam Zam Mirza Johar Baig (BA LLB, Legal Researcher) for understanding fundamental rights and criminal law.",
-  keywords: ["Aqsa Zam Zam Mirza Johar Baig", "Aqsa Mirza", "law for beginners", "legal education", "fundamental rights", "criminal law basics", "learn law simple"],
-  authors: [{ name: "Aqsa Zam Zam Mirza Johar Baig", url: "https://aqsa-zam-zam-mirza-johar-baig-portf.vercel.app/" }],
-  creator: "Aqsa Zam Zam Mirza Johar Baig",
+  description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, Urdu shayari, and blogs. AqsA Johar Baig is a CS Student, Full-Stack Developer, and Poet from Nagpur.",
+  metadataBase: new URL('https://aqsazammam.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    type: "website",
-    locale: "en_IN",
-    url: "https://law-for-beginners.vercel.app",
-    title: "Law for Beginners | Aqsa Zam Zam Mirza Johar Baig",
-    description: "The easiest way to learn law and understand your rights through storytelling and real-life examples, crafted by Legal Researcher Aqsa Zam Zam Mirza Johar Baig.",
-    siteName: "Law for Beginners",
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://aqsazammam.com',
+    title: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | CS Portfolio & Shayari',
+    description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, Urdu shayari, and blogs.",
+    images: [{ url: '/images/aqsa-hero.webp', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG portrait' }],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Law for Beginners | by Aqsa Zam Zam Mirza Johar Baig",
-    description: "The easiest way to learn law and understand your rights through storytelling and real-life examples.",
-    creator: "@aqsamirza",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Zam Zam Mirza Johar Baig', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'AqsA Mirza Urdu shayari', 'AqsA Baig blogs coding', 'AqsA Zam Zam developer Nagpur'],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'AQSA ZAM ZAM MIRZA JOHAR BAIG',
+    alternateName: ['AqsA Johar Baig', 'AqsA Zam Zam Mirza'],
+    url: 'https://aqsazammam.com',
+    jobTitle: 'CS Student & Developer',
+    description: 'Computer Science student, Full-Stack Developer, AI/ML Researcher, and Urdu Shayari Poet from Nagpur.',
+    knowsAbout: ['AI/ML', 'DevOps', 'Urdu Shayari', 'Python', 'Next.js', 'AWS'],
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: 'VIIT Pune',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Nagpur',
+      addressCountry: 'India'
+    },
+    sameAs: [
+      'https://www.linkedin.com/in/aqsa-zam-zam-mirza-johar-baig-28501b3b6/',
+      'https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG'
+    ],
+  };
+
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-background font-sans text-foreground">
-        <Header />
-        <div className="flex flex-1 overflow-hidden">
-          <Sidebar />
-          <main className="flex-1 overflow-y-auto">
-            <div className="container mx-auto max-w-5xl p-6 md:p-10">
-              {children}
-            </div>
-          </main>
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google Analytics & Search Console Placeholder */}
+        <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
+      </head>
+      <body className={`${inter.className} min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Navbar />
+        <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
