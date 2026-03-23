@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: {
     template: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | %s Portfolio',
-    default: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Portfolio & Shayari',
+    default: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Software Developer Portfolio',
   },
-  description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, Urdu shayari, and blogs. AqsA Johar Baig is a CS Student, Full-Stack Developer, and Poet from Nagpur.",
+  description: "Portfolio of AQSA ZAM ZAM MIRZA JOHAR BAIG, a CS Student and Software Developer specializing in AI/ML, Full-Stack Development, and Cloud Distributed Systems.",
   metadataBase: new URL('https://aqsazammam.com'),
   alternates: {
     canonical: '/',
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://aqsazammam.com',
-    title: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | CS Portfolio & Shayari',
-    description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, Urdu shayari, and blogs.",
+    title: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Software Developer Portfolio',
+    description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, software architecture, and technical expertise.",
     images: [{ url: '/profile.png', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG portrait' }],
   },
-  keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Zam Zam Mirza Johar Baig', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'AqsA Mirza Urdu shayari', 'AqsA Baig blogs coding', 'AqsA Zam Zam developer Nagpur'],
+  keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Mirza Developer', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'Software Developer Pune', 'VIIT Pune CS student', 'AI ML Specialist'],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -33,23 +33,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'AQSA ZAM ZAM MIRZA JOHAR BAIG',
-    alternateName: ['AqsA Johar Baig', 'AqsA Zam Zam Mirza'],
+    alternateName: ['AqsA Johar Baig', 'AqsA Mirza', 'Aqsa Zam Zam Mirza Johar Baig'],
     url: 'https://aqsazammam.com',
-    jobTitle: 'CS Student & Developer',
-    description: 'Computer Science student, Full-Stack Developer, AI/ML Researcher, and Urdu Shayari Poet from Nagpur.',
-    knowsAbout: ['AI/ML', 'DevOps', 'Urdu Shayari', 'Python', 'Next.js', 'AWS'],
-    alumniOf: {
-      '@type': 'CollegeOrUniversity',
-      name: 'VIIT Pune',
-    },
+    jobTitle: 'Software Developer & CS Student',
+    description: 'Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning. Experienced in building scalable full-stack applications and cloud-based distributed systems.',
+    knowsAbout: ['AI/ML', 'Full-Stack Development', 'Cloud Computing', 'Java', 'Python', 'AWS', 'System Design'],
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'Vishwakarma Institute of Information Technology (VIIT), Pune',
+      },
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'IIT Madras',
+      }
+    ],
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Nagpur',
+      addressLocality: 'Pune',
+      addressRegion: 'Maharashtra',
       addressCountry: 'India'
     },
     sameAs: [
-      'https://www.linkedin.com/in/aqsa-zam-zam-mirza-johar-baig-28501b3b6/',
-      'https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG'
+      'https://www.linkedin.com/in/aqsamirza08',
+      'https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG',
+      'https://www.kaggle.com/aqsamirza08',
+      'https://aqsamirza08.medium.com/',
+      'https://stackoverflow.com/users/32468898/aqsa-zam-zam-mirza-johar-baig',
+      'https://www.youtube.com/@aqsamirza08'
     ],
   };
 

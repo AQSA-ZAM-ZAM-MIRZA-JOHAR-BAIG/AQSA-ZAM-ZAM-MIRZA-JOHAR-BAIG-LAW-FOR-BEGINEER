@@ -7,7 +7,7 @@ export default function Footer() {
           SEO Optimized Portfolio created for AQSA ZAM ZAM MIRZA JOHAR BAIG
         </p>
         <div className="flex space-x-4 mb-4">
-          <a href="https://linkedin.com/in/aqsa-zam-zam-mirza-johar-baig-28501b3b6" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+          <a href="https://linkedin.com/in/aqsamirza08" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
             LinkedIn
           </a>
           <a href="https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -16,17 +16,17 @@ export default function ContactPage() {
         <div>
            <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Let&apos;s Connect.</h1>
            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10">
-             Whether you&apos;re looking for an <strong>AqsA Zam Zam developer Nagpur</strong> to build your next application, or want to discuss AI/ML research at VIIT Pune, feel free to reach out. I&apos;m always open to discussing new projects, technical challenges, or even Urdu poetry.
+             Whether you&apos;re looking for a software developer to build your next scalable application, or want to discuss AI/ML research at VIIT Pune or IIT Madras, feel free to reach out. I&apos;m always open to discussing new projects and technical challenges.
            </p>
            
            <div className="space-y-8">
-              <a href="mailto:contact@aqsazammam.com" className="flex items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 hover:border-blue-500 hover:shadow-md transition-all group">
+              <a href="mailto:aqsamirz6306@gmail.com" className="flex items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 hover:border-blue-500 hover:shadow-md transition-all group">
                  <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6" />
                  </div>
                  <div>
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-1">Email</h3>
-                    <p className="text-lg font-medium text-gray-900 dark:text-white">contact@aqsazammam.com</p>
+                    <p className="text-lg font-medium text-gray-900 dark:text-white">aqsamirz6306@gmail.com</p>
                  </div>
               </a>
               
@@ -36,7 +36,17 @@ export default function ContactPage() {
                  </div>
                  <div>
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-1">Location</h3>
-                    <p className="text-lg font-medium text-gray-900 dark:text-white">Nagpur & Pune, India</p>
+                    <p className="text-lg font-medium text-gray-900 dark:text-white">Pune, Maharashtra, India</p>
+                 </div>
+              </div>
+
+              <div className="flex items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700">
+                 <div className="bg-purple-100 dark:bg-purple-900/30 p-4 rounded-xl text-purple-600 dark:text-purple-400">
+                    <Phone className="w-6 h-6" />
+                 </div>
+                 <div>
+                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-1">Phone</h3>
+                    <p className="text-lg font-medium text-gray-900 dark:text-white">+91 7219718451</p>
                  </div>
               </div>
            </div>

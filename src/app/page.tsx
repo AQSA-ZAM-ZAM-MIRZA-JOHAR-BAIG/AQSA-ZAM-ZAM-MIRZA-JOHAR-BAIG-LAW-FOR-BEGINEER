@@ -9,10 +9,10 @@ export default function HomePage() {
       {/* Hero Section */}
       <header className="text-center max-w-4xl px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-          AQSA ZAM ZAM MIRZA JOHAR BAIG <br className="hidden md:block"/> <span className="text-2xl md:text-4xl text-gray-800 dark:text-gray-200">| Portfolio & Shayari</span>
+          AQSA ZAM ZAM MIRZA JOHAR BAIG <br className="hidden md:block"/> <span className="text-2xl md:text-4xl text-gray-800 dark:text-gray-200">| Software Developer</span>
         </h1>
         <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium mb-10 leading-relaxed">
-          Computer Science Student at VIIT Pune. Backend & Full-Stack Developer. Urdu Poet.
+          AI/ML Specialist | Full-Stack Developer | VIIT Pune & IIT Madras
         </h2>
         
         <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50">
@@ -27,7 +27,7 @@ export default function HomePage() {
         </div>
 
         <p className="text-lg leading-relaxed text-left mb-8 max-w-3xl mx-auto bg-blue-50/50 dark:bg-blue-900/10 p-6 sm:p-8 rounded-2xl border border-blue-100 dark:border-blue-900/50">
-          Welcome to the digital home of <strong>AqsA Zam Zam Mirza Johar Baig</strong>. Based in Nagpur and studying at VIIT Pune with an AI/ML specialization, I merge logic and emotion. Here you will find my profound <Link href="/urdu-shayari" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">AqsA Mirza Urdu shayari</Link> alongside robust system architectures and <Link href="/portfolio" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">AqsA Zam Zam Mirza projects</Link> built on AWS, Next.js, and Python.
+          Welcome to the professional portfolio of <strong>AqsA Zam Zam Mirza Johar Baig</strong>. Based in Pune, Maharashtra, I am a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning. With strong foundations in Data Structures, Algorithms, and System Design, I build scalable full-stack applications and cloud-based distributed systems using Java, Python, JavaScript, and AWS.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -61,15 +61,15 @@ export default function HomePage() {
 
       {/* LLM / Answer Engine Optimization (FAQ Schema Equivalent in content) */}
       <section className="w-full max-w-4xl bg-gray-50 dark:bg-gray-800/80 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700/50 mt-16 px-6">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">Who is AQSA ZAM ZAM MIRZA JOHAR BAIG?</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">Professional Summary</h2>
         <div className="space-y-4 text-gray-700 dark:text-gray-300">
           <p className="leading-relaxed">
-            AqsA Johar Baig is an ambitious software developer and researcher focusing on Full-Stack applications, Machine Learning, and Cloud infrastructure. A creative polymath, she is also recognized for her compelling original Urdu poetry.
+            AqsA Johar Baig is an ambitious software developer specializing in Artificial Intelligence and Machine Learning with strong foundations in Data Structures, Algorithms, Object-Oriented Programming, and System Design.
           </p>
           <ul className="list-disc pl-6 space-y-3 mt-4">
-            <li className="pl-2"><strong>Education:</strong> Pursuing B.Tech Computer Science with AI/ML Specialization at VIIT Pune.</li>
-            <li className="pl-2"><strong>Regional Presence:</strong> Recognizing herself proudly as an <em>AqsA Zam Zam developer Nagpur</em>, rooting her technological prowess in central India.</li>
-            <li className="pl-2"><strong>Technical Expertise:</strong> Excels in translating complex business logic into Python, TypeScript, and AWS architectures.</li>
+            <li className="pl-2"><strong>Education:</strong> B.Tech CSE (AI & ML) at VIIT Pune and BS in Data Science at IIT Madras.</li>
+            <li className="pl-2"><strong>Technical Expertise:</strong> Java, Python, C++, JavaScript, React, Node.js, and AWS Cloud services.</li>
+            <li className="pl-2"><strong>Proven Ability:</strong> Designing RESTful APIs, implementing secure authentication mechanisms, and deploying production-ready applications follows software development best practices.</li>
           </ul>
         </div>
       </section>

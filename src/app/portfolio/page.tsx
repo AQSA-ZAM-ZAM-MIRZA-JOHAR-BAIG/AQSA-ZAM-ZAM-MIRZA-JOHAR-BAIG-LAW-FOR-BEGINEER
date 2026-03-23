@@ -10,43 +10,27 @@ export const metadata: Metadata = {
 const projects = [
   { 
     id: 1, 
-    title: 'E-Commerce Microservices Backend', 
-    desc: 'Engineered a highly scalable, fault-tolerant backend architecture handling thousands of concurrent requests using Node.js and distributed AWS services.', 
-    tech: ['AWS', 'Node.js', 'Redis', 'Docker'],
+    title: 'Mahalaxmi Tailors (mahalaxmi-tailors.shop)', 
+    desc: 'Designed a production-ready e-commerce platform supporting a small tailoring business. Implemented secure JWT authentication, role-based access control, and integrated Razorpay, Cloudinary, and Jitsi Meet. Deployed on AWS with IAM, S3, Route 53, and CloudFront.', 
+    tech: ['MERN', 'JWT', 'Razorpay', 'AWS', 'DevOps'],
     icon: <Terminal className="w-8 h-8"/>,
-    link: "https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG"
+    link: "https://mahalaxmi-tailors.shop"
   },
   { 
     id: 2, 
-    title: 'Smart Hospital Management System', 
-    desc: 'Developed comprehensive patient tracking schemas and predictive ML logic utilizing Random Forest to forecast ICU bed availability during high-traffic periods.', 
-    tech: ['Python', 'Flask', 'React', 'MongoDB'],
+    title: 'FalcoVita (falcovita.vercel.app)', 
+    desc: 'Led end-to-end development of a scalable healthcare platform. Architected asynchronous task pipelines using Celery and Redis. Developed 20+ interactive data visualizations using Chart.js and secured the app with Bcrypt, Argon2, and HMAC-SHA.', 
+    tech: ['Vue.js', 'Flask', 'Redis', 'Celery', 'OpenAI'],
     icon: <Code2 className="w-8 h-8"/>,
-    link: "https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG"
+    link: "https://falcovita.vercel.app"
   },
   { 
     id: 3, 
-    title: 'IPO Sentiment Analysis Platform', 
-    desc: 'Constructed live data scraping pipelines fetching market data and applying NLP sentiment analysis to rank upcoming IPOs for retail investors.', 
-    tech: ['Next.js', 'Python', 'Pandas', 'NLTK'],
+    title: 'IPO-Success-Predictor', 
+    desc: 'Achieved 80% prediction accuracy for IPO success using Ensemble Learning (Bagging, Boosting). Developed an interactive web interface on Hugging Face spaces for near real-time assessment and automated end-to-end data pipelines.', 
+    tech: ['Python', 'Pandas', 'Ensemble Learning', 'Hugging Face'],
     icon: <Terminal className="w-8 h-8"/>,
-    link: "https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG"
-  },
-  { 
-    id: 4, 
-    title: 'DevOps CI/CD Pipeline Generator', 
-    desc: 'Created an automated workflow generation tool that provisions GitHub Actions templates for Next.js and Django monoliths instantly, cutting setup time by 90%.', 
-    tech: ['GitHub Actions', 'YAML', 'Bash'],
-    icon: <Code2 className="w-8 h-8"/>,
-    link: "https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG"
-  },
-  { 
-    id: 5, 
-    title: 'Predictive NLP Model for Text Summarization', 
-    desc: 'Fine-tuned a specialized transformer model capable of summarizing lengthy legal and financial documents while preserving over 95% of critical factual contexts.', 
-    tech: ['PyTorch', 'HuggingFace', 'FastAPI'],
-    icon: <Terminal className="w-8 h-8"/>,
-    link: "https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG"
+    link: "https://huggingface.co/spaces/ayushdayal8/IPO-Success-Predictor"
   },
 ];
 
@@ -54,9 +38,9 @@ export default function PortfolioPage() {
   return (
     <section className="max-w-6xl mx-auto py-10 animate-in fade-in slide-in-from-bottom-6 duration-700">
       <header className="mb-12 max-w-2xl">
-         <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-gray-900 dark:text-white">AqsA Johar Baig Portfolio</h1>
+         <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-gray-900 dark:text-white">AqsA Mirza Projects</h1>
          <p className="text-lg text-gray-600 dark:text-gray-400">
-           A deep dive into the architectural decisions, scalable deployments, and robust <strong>AqsA Zam Zam Mirza projects</strong>. Blending theoretical knowledge from VIIT Pune with real-world complexities.
+           A showcase of production-ready applications, scalable backends, and machine learning models built by <strong>AqsA Zam Zam Mirza Johar Baig</strong>.
          </p>
       </header>
       
