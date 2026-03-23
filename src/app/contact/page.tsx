@@ -20,13 +20,13 @@ export default function ContactPage() {
            </p>
            
            <div className="space-y-8">
-              <a href="mailto:aqsamirz6306@gmail.com" className="flex items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 hover:border-blue-500 hover:shadow-md transition-all group">
+              <a href="mailto:aqsa****@gmail.com" className="flex items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 hover:border-blue-500 hover:shadow-md transition-all group">
                  <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6" />
                  </div>
                  <div>
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-1">Email</h3>
-                    <p className="text-lg font-medium text-gray-900 dark:text-white">aqsamirz6306@gmail.com</p>
+                    <p className="text-lg font-medium text-gray-900 dark:text-white">aqsa****@gmail.com</p>
                  </div>
               </a>
               
@@ -46,7 +46,7 @@ export default function ContactPage() {
                  </div>
                  <div>
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-1">Phone</h3>
-                    <p className="text-lg font-medium text-gray-900 dark:text-white">+91 7219718451</p>
+                    <p className="text-lg font-medium text-gray-900 dark:text-white">+91 72*******51</p>
                  </div>
               </div>
            </div>
