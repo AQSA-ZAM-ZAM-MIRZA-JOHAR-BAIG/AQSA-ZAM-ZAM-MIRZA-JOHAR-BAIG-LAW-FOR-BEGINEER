@@ -17,7 +17,7 @@ export default function HomePage() {
         
         <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50">
           <Image 
-            src="/profile.png" 
+            src="/file.svg" 
             alt="AQSA ZAM ZAM MIRZA JOHAR BAIG" 
             fill 
             sizes="(max-width: 768px) 192px, 224px"

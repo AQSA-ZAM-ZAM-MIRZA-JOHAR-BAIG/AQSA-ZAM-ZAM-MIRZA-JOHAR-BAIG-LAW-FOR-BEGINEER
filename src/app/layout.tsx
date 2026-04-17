@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: 'https://aqsazammam.com',
     title: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Software Developer Portfolio',
     description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, software architecture, and technical expertise.",
-    images: [{ url: '/profile.png', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG portrait' }],
+    images: [{ url: '/file.svg', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG logo' }],
   },
   keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Mirza Developer', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'Software Developer Pune', 'VIIT Pune CS student', 'AI ML Specialist'],
 };
