@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://law-for-beginners.vercel.app
+Host: https://aqsazammam.com
 
 # Sitemaps
-Sitemap: https://law-for-beginners.vercel.app/sitemap.xml
+Sitemap: https://aqsazammam.com/sitemap.xml
