@@ -15,7 +15,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-sm text-gray-400 dark:text-gray-500">
-          © {currentYear} AqsA Johar Baig. Built with Next.js (App Router).
+          © {currentYear} Aqsa Zam Zam Mirza Johar Baig. Built with Next.js (App Router).
         </p>
       </div>
     </footer>

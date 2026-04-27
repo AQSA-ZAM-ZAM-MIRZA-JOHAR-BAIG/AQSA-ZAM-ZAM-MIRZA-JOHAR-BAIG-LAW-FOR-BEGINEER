@@ -3,7 +3,7 @@ import { BookOpen, MapPin, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Detailed background, education at VIIT Pune, and technical skills of AqsA Johar Baig. Authoritative E-E-A-T profile.',
+  description: 'Detailed background, education at VIIT Pune, and technical skills of Aqsa Zam Zam Mirza Johar Baig. Authoritative E-E-A-T profile.',
   alternates: { canonical: '/about' }
 };
 

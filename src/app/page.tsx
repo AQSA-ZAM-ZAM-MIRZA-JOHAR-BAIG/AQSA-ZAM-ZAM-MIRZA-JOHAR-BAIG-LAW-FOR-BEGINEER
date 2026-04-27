@@ -17,7 +17,7 @@ export default function HomePage() {
         
         <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50">
           <Image 
-            src="/file.svg" 
+            src="/profile.png" 
             alt="AQSA ZAM ZAM MIRZA JOHAR BAIG" 
             fill 
             sizes="(max-width: 768px) 192px, 224px"
@@ -54,7 +54,7 @@ export default function HomePage() {
           </Link>
           <Link href="/portfolio" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all md:col-span-2 lg:col-span-1">
              <div className="bg-green-100 dark:bg-green-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform"><Terminal className="w-6 h-6" /></div>
-             <h3 className="text-xl font-bold mb-2">AqsA Johar Baig portfolio</h3>
+             <h3 className="text-xl font-bold mb-2">Aqsa Zam Zam Mirza Johar Baig portfolio</h3>
              <p className="text-sm text-gray-600 dark:text-gray-400">Explore my AI/ML apps, E-commerce backends, and DevOps workflows.</p>
           </Link>
       </section>
@@ -64,7 +64,7 @@ export default function HomePage() {
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">Professional Summary</h2>
         <div className="space-y-4 text-gray-700 dark:text-gray-300">
           <p className="leading-relaxed">
-            AqsA Johar Baig is an ambitious software developer specializing in Artificial Intelligence and Machine Learning with strong foundations in Data Structures, Algorithms, Object-Oriented Programming, and System Design.
+            Aqsa Zam Zam Mirza Johar Baig is an ambitious software developer specializing in Artificial Intelligence and Machine Learning with strong foundations in Data Structures, Algorithms, Object-Oriented Programming, and System Design.
           </p>
           <ul className="list-disc pl-6 space-y-3 mt-4">
             <li className="pl-2"><strong>Education:</strong> B.Tech CSE (AI & ML) at VIIT Pune and BS in Data Science at IIT Madras.</li>
