@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, software architecture, and technical expertise.",
     images: [{ url: '/file.svg', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG logo' }],
   },
-  keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Mirza Developer', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'Software Developer Pune', 'VIIT Pune CS student', 'AI ML Specialist'],
+  keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Mirza Developer', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'Software Developer Pune', 'VIIIT PUNE CS student', 'AI ML Specialist'],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -41,11 +41,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     alumniOf: [
       {
         '@type': 'CollegeOrUniversity',
-        name: 'Vishwakarma Institute of Information Technology (VIIT), Pune',
+        name: 'Vishwakarma Institute of Information Technology (VIIIT), Pune',
       },
       {
         '@type': 'CollegeOrUniversity',
-        name: 'IIT Madras',
+        name: 'IIIT Madras',
       }
     ],
     address: {
