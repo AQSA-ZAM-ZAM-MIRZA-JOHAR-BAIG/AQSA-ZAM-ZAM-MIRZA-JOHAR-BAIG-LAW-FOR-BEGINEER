@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { BookOpen, MapPin, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -10,12 +11,23 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <article className="max-w-4xl mx-auto py-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
-      <header className="mb-12">
-         <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">About AQSA ZAM ZAM MIRZA JOHAR BAIG</h1>
-         <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
-            <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Pune, Maharashtra, India</span>
-            <span className="flex items-center gap-1"><GraduationCap className="w-4 h-4" /> VIIIT PUNE & IIIT Madras</span>
-         </div>
+      <header className="mb-12 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+        <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-xl ring-2 ring-blue-500/40 shrink-0">
+          <Image
+            src="/profile.png"
+            alt="AQSA ZAM ZAM MIRZA JOHAR BAIG"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">About AQSA ZAM ZAM MIRZA JOHAR BAIG</h1>
+          <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
+             <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Pune, Maharashtra, India</span>
+             <span className="flex items-center gap-1"><GraduationCap className="w-4 h-4" /> VIIIT PUNE & IIIT Madras</span>
+          </div>
+        </div>
       </header>
 
       <div className="prose dark:prose-invert max-w-none space-y-12">
