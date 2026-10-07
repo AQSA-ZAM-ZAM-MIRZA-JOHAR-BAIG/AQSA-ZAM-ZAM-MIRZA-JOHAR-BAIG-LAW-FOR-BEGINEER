@@ -9,11 +9,14 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    template: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | %s Portfolio',
-    default: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Software Developer Portfolio',
+    template: '%s | Aqsa Zam Zam Mirza Johar Baig (Aqsa Mirza)',
+    default: 'Aqsa Zam Zam Mirza Johar Baig (Aqsa Mirza) | Law For Beginners & Legal Education',
   },
-  description: "Portfolio of AQSA ZAM ZAM MIRZA JOHAR BAIG, a CS Student and Software Developer specializing in AI/ML, Full-Stack Development, and Cloud Distributed Systems.",
+  description: "Official legal education guide and portal created by Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza) – CS student, AI developer, and legal-tech researcher.",
   metadataBase: new URL('https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/'),
+  verification: {
+    google: 'googlee89522a79f5eb2c7',
+  },
   alternates: {
     canonical: '/',
   },
@@ -21,23 +24,56 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/',
-    title: 'AQSA ZAM ZAM MIRZA JOHAR BAIG | Software Developer Portfolio',
-    description: "Discover AQSA ZAM ZAM MIRZA JOHAR BAIG's coding projects, software architecture, and technical expertise.",
-    images: [{ url: '/file.svg', alt: 'AQSA ZAM ZAM MIRZA JOHAR BAIG logo' }],
+    title: 'Aqsa Zam Zam Mirza Johar Baig (Aqsa Mirza) | Law For Beginners',
+    description: "Discover legal guides, law tutorials, and software architecture by Aqsa Zam Zam Mirza Johar Baig.",
+    images: [{ url: '/file.svg', alt: 'Aqsa Zam Zam Mirza Johar Baig logo' }],
   },
-  keywords: ['AQSA ZAM ZAM MIRZA JOHAR BAIG', 'AqsA Mirza Developer', 'AqsA Johar Baig portfolio', 'AqsA Zam Zam Mirza projects', 'Software Developer Pune', 'VIIIT PUNE CS student', 'AI ML Specialist'],
+  keywords: [
+    'AQSA ZAM ZAM MIRZA JOHAR BAIG',
+    'Aqsa Zam Zam Mirza Johar Baig',
+    'aqsa zam zam mirza johar baig',
+    'AQSA ZAM ZAM MIRZA',
+    'Aqsa Zam Zam Mirza',
+    'aqsa zam zam mirza',
+    'AQSA MIRZA',
+    'Aqsa Mirza',
+    'aqsa mirza',
+    'Law For Beginners',
+    'AqsA Mirza Developer',
+    'AqsA Johar Baig portfolio',
+    'AqsA Zam Zam Mirza projects',
+    'Software Developer Pune',
+    'VIIIT PUNE CS student',
+    'AI ML Specialist'
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'AQSA ZAM ZAM MIRZA JOHAR BAIG',
-    alternateName: ['Aqsa Johar Baig', 'Aqsa Mirza', 'Aqsa Zam Zam Mirza Johar Baig', 'Aqsa Zam Zam'],
+    name: 'Aqsa Zam Zam Mirza Johar Baig',
+    alternateName: [
+      'AQSA ZAM ZAM MIRZA JOHAR BAIG',
+      'Aqsa Zam Zam Mirza Johar Baig',
+      'aqsa zam zam mirza johar baig',
+      'AQSA ZAM ZAM MIRZA',
+      'Aqsa Zam Zam Mirza',
+      'aqsa zam zam mirza',
+      'AQSA MIRZA',
+      'Aqsa Mirza',
+      'aqsa mirza',
+      'Aqsa Johar Baig',
+      'Aqsa M. J. Baig'
+    ],
+    givenName: 'Aqsa',
+    familyName: 'Mirza Johar Baig',
+    additionalName: 'Zam Zam',
     url: 'https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/',
     jobTitle: 'Software Developer & CS Student',
-    description: 'Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning. Experienced in building scalable full-stack applications and cloud-based distributed systems.',
-    knowsAbout: ['AI/ML', 'Full-Stack Development', 'Cloud Computing', 'Java', 'Python', 'AWS', 'System Design'],
+    description: 'Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza) is a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at VIIIT PUNE and IIIT Madras.',
+    disambiguatingDescription: 'Official entity record for Aqsa Zam Zam Mirza Johar Baig, also known as Aqsa Zam Zam Mirza and Aqsa Mirza.',
+    knowsAbout: ['Law for Beginners', 'AI/ML', 'Full-Stack Development', 'Cloud Computing', 'Java', 'Python', 'AWS', 'System Design'],
     alumniOf: [
       {
         '@type': 'CollegeOrUniversity',
@@ -55,20 +91,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: 'India'
     },
     sameAs: [
-      'https://www.linkedin.com/in/aqsamirza08',
       'https://github.com/AQSA-ZAM-ZAM-MIRZA-JOHAR-BAIG',
+      'https://www.linkedin.com/in/aqsamirza08',
       'https://www.kaggle.com/aqsamirza08',
       'https://aqsamirza08.medium.com/',
       'https://stackoverflow.com/users/32468898/aqsa-zam-zam-mirza-johar-baig',
-      'https://www.youtube.com/@aqsamirza08'
+      'https://www.youtube.com/@aqsamirza08',
+      'https://aqsa-zam-zam-mirza-johar-baig-portf.vercel.app/',
+      'https://aqsa-zam-zam-mirza-johar-baig-portfolio-3.vercel.app/',
+      'https://aqsazamzammirzajoharbaig.com/',
+      'https://aqsa-zam-zam-mirza-johar-baig-blogs.vercel.app/',
+      'https://aqsa-zam-zam-mirza-johar-baig-const.vercel.app/',
+      'https://firgenerator.org/',
+      'https://aqsa-zam-zam-mirza-johar-baig-law-d.vercel.app/',
+      'https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/',
+      'https://aqsa-zam-zam-mirza-johar-baig-urdu.vercel.app/',
+      'https://www.aqsazamzammirzajoharbaig.com/',
+      'https://aqsa-zam-zam-mirza-johar-baig.github.io/Yashwantrao-chavan-mahavidyalaya/'
     ],
   };
 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google Analytics & Search Console Placeholder */}
-        <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE" />
+        <meta name="google-site-verification" content="googlee89522a79f5eb2c7" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`

@@ -1,30 +1,6 @@
-import type { MetadataRoute } from 'next'
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
 
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: [
-      {
-        userAgent: 'Googlebot',
-        allow: ['/'],
-        disallow: [
-          '/_next/',
-          '/api/',
-          '/*.json$',
-          '/*?*sort=', // Prevent crawling of sorted/filtered versions
-          '/*?*page=', // Prevent crawling duplicate paginated versions
-        ],
-      },
-      {
-        userAgent: '*',
-        allow: ['/'],
-        disallow: [
-          '/_next/',
-          '/api/',
-          '/*.json$',
-        ],
-        crawlDelay: 1, // Respect server load
-      },
-    ],
-    sitemap: 'https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/sitemap.xml',
-  }
-}
+Sitemap: https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/sitemap.xml
