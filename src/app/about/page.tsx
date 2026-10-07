@@ -18,6 +18,7 @@ export default function AboutPage() {
             alt="AQSA ZAM ZAM MIRZA JOHAR BAIG"
             fill
             priority
+            unoptimized
             className="object-cover"
           />
         </div>

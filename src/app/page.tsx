@@ -22,6 +22,7 @@ export default function HomePage() {
             fill 
             sizes="(max-width: 768px) 192px, 224px"
             priority
+            unoptimized
             className="object-cover"
           />
         </div>
