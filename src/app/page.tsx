@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { BookOpen, Code, Terminal, Edit3 } from 'lucide-react';
+import { BookOpen, Terminal, Edit3, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -27,15 +27,15 @@ export default function HomePage() {
           />
         </div>
 
-        <p className="text-lg leading-relaxed text-left mb-8 max-w-3xl mx-auto bg-blue-50/50 dark:bg-blue-900/10 p-6 sm:p-8 rounded-2xl border border-blue-100 dark:border-blue-900/50">
+        <p className="text-lg leading-relaxed text-left mb-8 max-w-3xl mx-auto bg-blue-50/50 dark:bg-blue-900/10 p-6 sm:p-8 rounded-2xl border border-blue-100 dark:border-blue-900/50 text-gray-800 dark:text-gray-200">
           Welcome to the professional portfolio of <strong>AqsA Zam Zam Mirza Johar Baig</strong>. Based in Pune, Maharashtra, I am a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning. With strong foundations in Data Structures, Algorithms, and System Design, I build scalable full-stack applications and cloud-based distributed systems using Java, Python, JavaScript, and AWS.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/portfolio" className="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all flex items-center justify-center gap-2">
+            <Link href="/portfolio" className="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
                View Projects <Terminal className="w-4 h-4" />
             </Link>
-            <Link href="/urdu-shayari" className="w-full sm:w-auto px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg font-medium transition-all flex items-center justify-center gap-2">
+            <Link href="/urdu-shayari" className="w-full sm:w-auto px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700/80 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700 rounded-lg font-medium transition-all flex items-center justify-center gap-2 shadow-sm">
                Read Shayari <Edit3 className="w-4 h-4" />
             </Link>
         </div>
@@ -43,20 +43,64 @@ export default function HomePage() {
 
       {/* Featured Sections Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl px-4 mt-8">
-          <Link href="/about" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all">
-             <div className="bg-blue-100 dark:bg-blue-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6" /></div>
-             <h3 className="text-xl font-bold mb-2">CS Student & E-E-A-T</h3>
-             <p className="text-sm text-gray-600 dark:text-gray-400">Discover my background, education at Y.C. College (Yashwantrao Chavan College), and how I&apos;m training to be AqsA Zam Zam developer Nagpur.</p>
+          <Link 
+            href="/about" 
+            className="group flex flex-col justify-between p-7 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm hover:border-blue-500 dark:hover:border-blue-500/70 hover:shadow-xl dark:hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300"
+          >
+             <div>
+               <div className="bg-blue-100 dark:bg-blue-900/30 border border-blue-200/50 dark:border-blue-800/50 w-12 h-12 flex items-center justify-center rounded-xl mb-5 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                 <BookOpen className="w-6 h-6" />
+               </div>
+               <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                 CS Student &amp; E-E-A-T
+               </h3>
+               <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                 Discover my background, education at Y.C. College (Yashwantrao Chavan College), and how I&apos;m training to be AqsA Zam Zam developer Nagpur.
+               </p>
+             </div>
+             <div className="flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">
+               Learn More <ArrowRight className="w-4 h-4 ml-1.5" />
+             </div>
           </Link>
-          <Link href="/blogs" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all md:col-span-1 lg:col-span-1">
-             <div className="bg-purple-100 dark:bg-purple-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6" /></div>
-             <h3 className="text-xl font-bold mb-2">AqsA Baig blogs coding</h3>
-             <p className="text-sm text-gray-600 dark:text-gray-400">Read my technical insights on Data Structures, Machine Learning deployments, and interview prep.</p>
+
+          <Link 
+            href="/blogs" 
+            className="group flex flex-col justify-between p-7 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm hover:border-purple-500 dark:hover:border-purple-500/70 hover:shadow-xl dark:hover:shadow-purple-500/5 hover:-translate-y-1 transition-all duration-300 md:col-span-1 lg:col-span-1"
+          >
+             <div>
+               <div className="bg-purple-100 dark:bg-purple-900/30 border border-purple-200/50 dark:border-purple-800/50 w-12 h-12 flex items-center justify-center rounded-xl mb-5 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform">
+                 <BookOpen className="w-6 h-6" />
+               </div>
+               <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                 AqsA Baig blogs coding
+               </h3>
+               <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                 Read my technical insights on Data Structures, Machine Learning deployments, and interview prep.
+               </p>
+             </div>
+             <div className="flex items-center text-sm font-semibold text-purple-600 dark:text-purple-400 group-hover:translate-x-1 transition-transform">
+               Read Blogs <ArrowRight className="w-4 h-4 ml-1.5" />
+             </div>
           </Link>
-          <Link href="/portfolio" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all md:col-span-2 lg:col-span-1">
-             <div className="bg-green-100 dark:bg-green-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform"><Terminal className="w-6 h-6" /></div>
-             <h3 className="text-xl font-bold mb-2">Aqsa Zam Zam Mirza Johar Baig portfolio</h3>
-             <p className="text-sm text-gray-600 dark:text-gray-400">Explore my AI/ML apps, E-commerce backends, and DevOps workflows.</p>
+
+          <Link 
+            href="/portfolio" 
+            className="group flex flex-col justify-between p-7 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm hover:border-emerald-500 dark:hover:border-emerald-500/70 hover:shadow-xl dark:hover:shadow-emerald-500/5 hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-1"
+          >
+             <div>
+               <div className="bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200/50 dark:border-emerald-800/50 w-12 h-12 flex items-center justify-center rounded-xl mb-5 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform">
+                 <Terminal className="w-6 h-6" />
+               </div>
+               <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                 Aqsa Zam Zam Mirza Johar Baig portfolio
+               </h3>
+               <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                 Explore my AI/ML apps, E-commerce backends, and DevOps workflows.
+               </p>
+             </div>
+             <div className="flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform">
+               View Projects <ArrowRight className="w-4 h-4 ml-1.5" />
+             </div>
           </Link>
       </section>
 
