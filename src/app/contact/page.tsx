@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div>
            <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Let&apos;s Connect.</h1>
            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10">
-             Whether you&apos;re looking for a software developer to build your next scalable application, or want to discuss AI/ML research at VIIIT PUNE or IIIT Madras, feel free to reach out. I&apos;m always open to discussing new projects and technical challenges.
+             Whether you&apos;re looking for a software developer to build your next scalable application, or want to discuss AI/ML and software engineering from Yashwantrao College, feel free to reach out. I&apos;m always open to discussing new projects and technical challenges.
            </p>
            
            <div className="space-y-8">

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'AqsA Johar Baig portfolio',
     'AqsA Zam Zam Mirza projects',
     'Software Developer Pune',
-    'VIIIT PUNE CS student',
+    'Yashwantrao College CS student',
     'AI ML Specialist'
   ],
 };
@@ -71,17 +71,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     additionalName: 'Zam Zam',
     url: 'https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/',
     jobTitle: 'Software Developer & CS Student',
-    description: 'Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza) is a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at VIIIT PUNE and IIIT Madras.',
+    description: 'Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza) is a Computer Science achiever at Yashwantrao College (Grade O Outstanding, Open Category) specializing in Artificial Intelligence and Machine Learning.',
     disambiguatingDescription: 'Official entity record for Aqsa Zam Zam Mirza Johar Baig, also known as Aqsa Zam Zam Mirza and Aqsa Mirza.',
     knowsAbout: ['Law for Beginners', 'AI/ML', 'Full-Stack Development', 'Cloud Computing', 'Java', 'Python', 'AWS', 'System Design'],
     alumniOf: [
       {
         '@type': 'CollegeOrUniversity',
-        name: 'Vishwakarma Institute of Information Technology (VIIIT), Pune',
-      },
-      {
-        '@type': 'CollegeOrUniversity',
-        name: 'IIIT Madras',
+        name: 'Yashwantrao College',
       }
     ],
     address: {

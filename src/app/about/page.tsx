@@ -4,7 +4,7 @@ import { BookOpen, MapPin, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Detailed background, education at VIIIT PUNE, and technical skills of Aqsa Zam Zam Mirza Johar Baig. Authoritative E-E-A-T profile.',
+  description: 'Detailed background, academic achievements at Yashwantrao College, and technical skills of Aqsa Zam Zam Mirza Johar Baig. Authoritative E-E-A-T profile.',
   alternates: { canonical: '/about' }
 };
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">About AQSA ZAM ZAM MIRZA JOHAR BAIG</h1>
           <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
              <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Pune, Maharashtra, India</span>
-             <span className="flex items-center gap-1"><GraduationCap className="w-4 h-4" /> VIIIT PUNE & IIIT Madras</span>
+             <span className="flex items-center gap-1"><GraduationCap className="w-4 h-4" /> Yashwantrao College</span>
           </div>
         </div>
       </header>
@@ -48,19 +48,11 @@ export default function AboutPage() {
            <div className="space-y-6">
               <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm">
                  <div className="flex flex-col md:flex-row justify-between mb-2">
-                    <h4 className="text-lg font-bold">Vishwakarma Institute of Information Technology (VIIIT), Pune</h4>
-                    <span className="text-blue-600 dark:text-blue-400 font-semibold">CGPA: 8.77</span>
+                    <h4 className="text-lg font-bold">Yashwantrao College</h4>
+                    <span className="text-blue-600 dark:text-blue-400 font-semibold">Grade: O (Outstanding)</span>
                  </div>
-                 <p className="text-gray-600 dark:text-gray-400 italic mb-2">Bachelor of Technology in Computer Science and Engineering (AI & ML)</p>
-                 <p className="text-sm text-gray-500">Aug 2023 – Jun 2027</p>
-              </div>
-              <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm">
-                 <div className="flex flex-col md:flex-row justify-between mb-2">
-                    <h4 className="text-lg font-bold">Indian Institute of Technology (IITM), IIIT Madras</h4>
-                    <span className="text-blue-600 dark:text-blue-400 font-semibold">CGPA: 7.44</span>
-                 </div>
-                 <p className="text-gray-600 dark:text-gray-400 italic mb-2">Bachelor of Science in Data Science</p>
-                 <p className="text-sm text-gray-500">May 2023 – Jun 2027</p>
+                 <p className="text-gray-600 dark:text-gray-400 italic mb-2">Computer Science · Category: Open</p>
+                 <p className="text-sm text-gray-500">Academic Year 2024–2025 · Top Merit Standing</p>
               </div>
            </div>
         </section>
