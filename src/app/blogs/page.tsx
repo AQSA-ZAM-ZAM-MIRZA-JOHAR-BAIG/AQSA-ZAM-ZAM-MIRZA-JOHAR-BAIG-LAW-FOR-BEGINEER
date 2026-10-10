@@ -43,7 +43,7 @@ export default function BlogsPage() {
       <header className="mb-12 border-b border-gray-200 dark:border-gray-800 pb-8">
          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">AqsA Baig Blogs Coding</h1>
          <p className="text-xl text-gray-600 dark:text-gray-400 font-light">
-           Deep dives into software architecture, algorithmic patterns, and DevOps infrastructure. Documenting the learning process of a CS student at Yashwantrao College.
+           Deep dives into software architecture, algorithmic patterns, and DevOps infrastructure. Documenting the learning process of a CS student at Y.C. College (Yashwantrao Chavan College).
          </p>
       </header>
       

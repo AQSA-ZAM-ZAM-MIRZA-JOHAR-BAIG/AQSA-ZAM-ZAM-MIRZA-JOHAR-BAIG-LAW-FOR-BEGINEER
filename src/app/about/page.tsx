@@ -4,7 +4,7 @@ import { BookOpen, MapPin, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Detailed background, academic achievements at Yashwantrao College, and technical skills of Aqsa Zam Zam Mirza Johar Baig. Authoritative E-E-A-T profile.',
+  description: 'Detailed background, academic achievements at Y.C. College (Yashwantrao Chavan College), and technical skills of Aqsa Zam Zam Mirza Johar Baig. Authoritative E-E-A-T profile.',
   alternates: { canonical: '/about' }
 };
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">About AQSA ZAM ZAM MIRZA JOHAR BAIG</h1>
           <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
              <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Pune, Maharashtra, India</span>
-             <span className="flex items-center gap-1"><GraduationCap className="w-4 h-4" /> Yashwantrao College</span>
+             <span className="flex items-center gap-1"><GraduationCap className="w-4 h-4" /> Y.C. College</span>
           </div>
         </div>
       </header>
@@ -48,7 +48,7 @@ export default function AboutPage() {
            <div className="space-y-6">
               <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm">
                  <div className="flex flex-col md:flex-row justify-between mb-2">
-                    <h4 className="text-lg font-bold">Yashwantrao College</h4>
+                    <h4 className="text-lg font-bold">Y.C. College (Yashwantrao Chavan College)</h4>
                     <span className="text-blue-600 dark:text-blue-400 font-semibold">Grade: O (Outstanding)</span>
                  </div>
                  <p className="text-gray-600 dark:text-gray-400 italic mb-2">Computer Science · Category: Open</p>

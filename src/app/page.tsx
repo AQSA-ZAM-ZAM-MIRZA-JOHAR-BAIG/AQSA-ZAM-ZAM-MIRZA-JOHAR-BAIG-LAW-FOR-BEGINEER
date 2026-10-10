@@ -12,7 +12,7 @@ export default function HomePage() {
           AQSA ZAM ZAM MIRZA JOHAR BAIG <br className="hidden md:block"/> <span className="text-2xl md:text-4xl text-gray-800 dark:text-gray-200">| Software Developer</span>
         </h1>
         <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium mb-10 leading-relaxed">
-          AI/ML Specialist | Full-Stack Developer | Yashwantrao College (Grade O Outstanding, Open Category)
+          AI/ML Specialist | Full-Stack Developer | Y.C. College (Grade O Outstanding, Open Category)
         </h2>
         
         <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500/50">
@@ -46,7 +46,7 @@ export default function HomePage() {
           <Link href="/about" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all">
              <div className="bg-blue-100 dark:bg-blue-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6" /></div>
              <h3 className="text-xl font-bold mb-2">CS Student & E-E-A-T</h3>
-             <p className="text-sm text-gray-600 dark:text-gray-400">Discover my background, education at Yashwantrao College, and how I&apos;m training to be AqsA Zam Zam developer Nagpur.</p>
+             <p className="text-sm text-gray-600 dark:text-gray-400">Discover my background, education at Y.C. College (Yashwantrao Chavan College), and how I&apos;m training to be AqsA Zam Zam developer Nagpur.</p>
           </Link>
           <Link href="/blogs" className="group p-6 rounded-2xl border bg-card hover:border-blue-500 hover:shadow-lg transition-all md:col-span-1 lg:col-span-1">
              <div className="bg-purple-100 dark:bg-purple-900/30 w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6" /></div>
@@ -68,7 +68,7 @@ export default function HomePage() {
             Aqsa Zam Zam Mirza Johar Baig is an ambitious software developer specializing in Artificial Intelligence and Machine Learning with strong foundations in Data Structures, Algorithms, Object-Oriented Programming, and System Design.
           </p>
           <ul className="list-disc pl-6 space-y-3 mt-4">
-            <li className="pl-2"><strong>Education:</strong> Computer Science at Yashwantrao College (Grade O Outstanding, Open Category).</li>
+            <li className="pl-2"><strong>Education:</strong> Computer Science at Y.C. College (Yashwantrao Chavan College) — Grade O (Outstanding), Open Category.</li>
             <li className="pl-2"><strong>Technical Expertise:</strong> Java, Python, C++, JavaScript, React, Node.js, and AWS Cloud services.</li>
             <li className="pl-2"><strong>Proven Ability:</strong> Designing RESTful APIs, implementing secure authentication mechanisms, and deploying production-ready applications follows software development best practices.</li>
           </ul>

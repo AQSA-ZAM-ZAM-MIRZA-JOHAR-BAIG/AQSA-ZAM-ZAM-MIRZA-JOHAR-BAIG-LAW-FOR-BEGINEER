@@ -43,6 +43,8 @@ export const metadata: Metadata = {
     'AqsA Johar Baig portfolio',
     'AqsA Zam Zam Mirza projects',
     'Software Developer Pune',
+    'Y.C. College CS student',
+    'Y.C College',
     'Yashwantrao College CS student',
     'AI ML Specialist'
   ],
@@ -71,13 +73,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     additionalName: 'Zam Zam',
     url: 'https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/',
     jobTitle: 'Software Developer & CS Student',
-    description: 'Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza) is a Computer Science achiever at Yashwantrao College (Grade O Outstanding, Open Category) specializing in Artificial Intelligence and Machine Learning.',
+    description: 'Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza) is a Computer Science achiever at Y.C. College (Yashwantrao Chavan College, Grade O Outstanding, Open Category) specializing in Artificial Intelligence and Machine Learning.',
     disambiguatingDescription: 'Official entity record for Aqsa Zam Zam Mirza Johar Baig, also known as Aqsa Zam Zam Mirza and Aqsa Mirza.',
     knowsAbout: ['Law for Beginners', 'AI/ML', 'Full-Stack Development', 'Cloud Computing', 'Java', 'Python', 'AWS', 'System Design'],
     alumniOf: [
       {
         '@type': 'CollegeOrUniversity',
-        name: 'Yashwantrao College',
+        name: 'Y.C. College (Yashwantrao Chavan College)',
       }
     ],
     address: {

@@ -1,6 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /_next/
 
+# Host
+Host: https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/
+
+# Sitemaps
 Sitemap: https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/sitemap.xml
